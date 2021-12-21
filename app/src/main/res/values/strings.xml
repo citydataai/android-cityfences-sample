@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">CityFences Demo</string>
+
+    <string name="dialog_permission_title">Permissions</string>
+    <string name="dialog_permission_message">You cannot run the MomentsSDK demo app without this permission.</string>
+    <string name="dialog_ok">OK</string>
+
+    <string name="home_title">Sample app</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="start">Start</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_location">Your Location</string>
+    <string name="action_tag_2">Tag2</string>
+
+    <string name="google_play_services_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA65mQcqsBPQWjax7kfzQ17rmR44zBDmRE</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="watch_video_btn_name">Watch Video</string>
+    <string name="fgOnly_enabled_btn_name">Foreground only mode enabled</string>
+    <string name="event_locations_map_btn_name">VIEW DATA POINTS ON MAP</string>
+    <string name="proximity_audio_mode_btn_name">Enable proximity audio mode</string>
+
+    <string name="adid_field_name">Device MAID: \u0020</string>
+    <string name="signal_count_field_name">Payloads sent to cloud: \u0020</string>
+    <string name="event_name_column">EVENT</string>
+    <string name="confidence_column">CONFIDENCE %</string>
+    <string name="start_column">START</string>
+    <string name="duration_column">DURATION</string>
+
+    <string name="login_url">https://auth.lotadata.com/signup.html?origin=https://geodash.lotadata.com</string>
+    <string name="login_msg_title">Alert!</string>
+    <string name="login_warning_text">Please, fill all the fields</string>
+    <string name="login_error_text">Incorrect  <b><i>username</i></b> or  <b><i>password</i></b></string>
+    <string name="welcome_geopush">GeoPush</string>
+    <string name="email">email</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="remember_credentials">remember me</string>
+    <string name="privacy_policy"><a href='https://lotadata.com/privacy_policy'>Privacy Policy | Terms of Service</a></string>
+
+
+</resources>

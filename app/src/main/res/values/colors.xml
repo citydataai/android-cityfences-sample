@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="layout_background_color">#232323</color>
+    <color name="selected_button_background_color">#65d3c4</color>
+    <color name="general_button_background_color">#7a7a7a</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="table_header_background_color">#65d3c4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMenuPrimary">#6cc4bc</color>
+    <color name="colorBackground">#f7f7f7</color>
+
+    <color name="black">#000000</color>
+    <color name="grey">#cccccc</color>
+    <color name="greydarker">#aaaaaa</color>
+    <color name="white">#ffffff</color>
+    <color name="lotaMain">#ff6251</color>
+    <color name="lotaColor">#713a7e</color>
+    <color name="red">#ff5d5e</color>
+    <color name="geopush_label_color">#eb6763</color>
+
+</resources>
