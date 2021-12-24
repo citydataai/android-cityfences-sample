@@ -20,47 +20,49 @@ public class MainActivity extends AppCompatActivity {
 
         mContext = this;
 
+        /** [SDK] THE BELOW LINE MUST TO BE ADDED **/
         initSDK();
     }
 
     /**
-     *
+     * Method in charge to initialize the SDK and request for runtime permissions
      */
     private void initSDK() {
-        sdkInstance = CityFences.getInstance( this, "<your API key here>", R.drawable.citydata_notification_icon);
+        sdkInstance = CityFences.getInstance( this, "YOUR API KEY HERE", R.drawable.citydata_notification_icon);
 
         if(sdkInstance != null) {
             sdkInstance.requestPermissions(this, new PermissionCallBack() {
                 @Override
                 public void onResult(boolean b) {
-                    launch();
+                    launchApp();
                 }
             });
         }
     }
 
     /**
-     *
+     * Method in charge to launch app and SDK service
      */
-    private void launch() {
+    private void launchApp() {
+        /** YOUR CODE HERE **/
+
+        /** [SDK] THE BELOW LINE MUST TO BE ADDED **/
         sdkInstance.start(this);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
+        /** [SDK] THE BELOW LINE MUST TO BE ADDED **/
         if(sdkInstance != null) sdkInstance.onStart(this);
     }
 
     @Override
     protected void onStop() {
+        /** [SDK] THE BELOW LINE MUST TO BE ADDED **/
         if(sdkInstance != null) sdkInstance.onStop(this);
+
         super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-
-        super.onDestroy();
     }
 }

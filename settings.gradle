@@ -1,7 +1,2 @@
 include ':cityfences-sdk-latest'
-include ':cityfences-sdk-latest'
-include ':cityfences-sdk'
-include ':cityfences-sdk'
-include ':cityfences-sdk-1.0'
-include ':lotadata-sdk-latest'
-include ':app', ':lotadata-sdk-latest'
+include ':app'
