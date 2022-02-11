@@ -2,6 +2,7 @@ package ai.citydata.cityfencesdemo;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
      * Method in charge to initialize the SDK and request for runtime permissions
      */
     private void initSDK() {
-        sdkInstance = CityFences.getInstance( this, "YOUR API KEY HERE", R.drawable.citydata_notification_icon);
+
+        sdkInstance = CityFences.getInstance( this, "<YOUR API KEY>", R.drawable.citydata_notification_icon);
 
         if(sdkInstance != null) {
             sdkInstance.requestPermissions(this, new PermissionCallBack() {
@@ -37,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
                     launchApp();
                 }
             });
+
+            //Example demonstrating how to report an event
+            sdkInstance.initCustomEvent();
+            sdkInstance.addEventItem("launch","SDK successfully initialized");
+            sdkInstance.reportCustomEvent();
+
+        } else {
+            Log.d("MainActivity", "sdk instance is null");
         }
     }
 
