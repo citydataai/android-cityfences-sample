@@ -75,4 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
         super.onStop();
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(sdkInstance != null) sdkInstance.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
 }
