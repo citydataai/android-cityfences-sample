@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initSDK() {
 
-        sdkInstance = CityFences.getInstance( this, "<YOUR API KEY>", R.drawable.citydata_notification_icon);
+        /** CityFences.getInstance parameters
+         * Param1: context
+         * Param2: customer's API KEY
+         * Param3: notification icon
+         * Param4: background enabled (false for foreground only)
+         */
+        sdkInstance = CityFences.getInstance( this, "<YOUR API KEY>", R.drawable.citydata_notification_icon, true);
 
         if(sdkInstance != null) {
             sdkInstance.requestPermissions(this, new PermissionCallBack() {
